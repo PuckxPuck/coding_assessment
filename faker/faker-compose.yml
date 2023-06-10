@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  faker:
+    build:
+      context: faker/
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+    networks:
+      - oxiqa_net
