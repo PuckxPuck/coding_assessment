@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - 5433:5432
+    environment:
+      POSTGRES_USER: oxiqa
+      POSTGRES_PASSWORD: oxiqa
+      POSTGRES_DB: messages_db
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - oxiqa_net
+networks:
+  oxiqa_net:
+    driver: bridge
