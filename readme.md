@@ -26,7 +26,7 @@ delivered_date: DateTime
 
 # Setup
 
-run to initialize database and seed data
-```docker-compose -f docker-compose.yml -f faker/faker-compose.yml up``` 
-consecutive runs should only run the database 
-```docker-compose up```
+run to initialize database and seed data  
+```docker-compose -f docker-compose.yml -f faker/faker-compose.yml up```  
+consecutive runs should only run the database  
+```docker-compose up```  
