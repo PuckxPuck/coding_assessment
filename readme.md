@@ -1,5 +1,5 @@
 # Problem
-You are tasked with designing an algorithm to dispatch messages from a queue to a set of given recipients. Messages with varying numbers of recipients are added to the queue concurrently by multiple clients. Your algorithm should ensure that all queued messages are attended to fairly. Additionally, it should handle any conflicts that may arise due to concurrent modifications of the queued messages. To achieve this you are provided a database with following tables and sample data.
+You are tasked with designing an algorithm to dispatch messages from a queue to a set of given recipients. Messages with varying numbers of recipients are added to the queue(messages table) concurrently by multiple clients. Your algorithm should ensure that all queued messages are attended to fairly avoiding longer wait time. Additionally, it should handle any conflicts that may arise due to concurrent modifications of the queued messages. To achieve this you are provided a database with following tables and sample data.
 
 Table: messages
 ```
