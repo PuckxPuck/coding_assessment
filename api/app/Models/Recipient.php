@@ -10,7 +10,7 @@ class Recipient extends Model
     use HasFactory;
 
     protected $table = 'recipients';
-
+    public $timestamps = false;
     public function message(){
         return $this->belongsTo(Message::class);
     }
