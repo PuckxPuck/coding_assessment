@@ -8,7 +8,7 @@ print("Start Generating fake data")
 
 # Connect to the PostgreSQL database
 conn = psycopg2.connect(
-    host="db",
+    host="localhost",
     port="5432",
     database="messages_db",
     user="oxiqa",
